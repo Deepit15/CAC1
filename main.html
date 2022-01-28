@@ -345,8 +345,8 @@ function test(event)
   document.getElementById("muname").style.display = "block";
 }
 
-uname.onfocus = function() {
-  document.getElementById("muname").style.display = "block";
+uname.onblur = function() {
+  document.getElementById("muname").style.display = "none";
 }
 
 // When the user clicks outside of the password field, hide the message box
